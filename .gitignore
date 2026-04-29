@@ -1,1 +1,16 @@
+# Vivado
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.Xil/
+*.jou
+*.log
+*.str
 
+# MATLAB
+*.asv
+*.autosave
+slprj/
+*.mlx~
