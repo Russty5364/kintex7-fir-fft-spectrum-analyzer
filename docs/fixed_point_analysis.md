@@ -26,3 +26,9 @@ Stored integer values were exported with `storedInteger(...)`, which makes the f
 
 For the RTL implementation, the initial working assumption is `DATA_W = 16`, `COEF_W = 16`, `TAPS = 32`, and an accumulator/output width based on the MATLAB result. [file:1]  
 Since the MATLAB output type was wider than the input type, the RTL verification flow must account for a wider internal result or apply a clearly defined output quantization stage. [web:311][file:1]
+## Summary
+
+- Input format: signed Q1.15
+- Coefficient format: signed Q1.15
+- FIR output format: signed S37.30
+- Exported vectors: ready for SystemVerilog FIR testbench
